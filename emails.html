@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Email Archive</title>
+  <meta name="description" content="Archive of past update emails by year">
+  <meta name="author" content="SitePoint">
+
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+
+    .archive {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem 4rem;
+    }
+
+    .archive h1 {
+      margin-bottom: 0.25rem;
+    }
+
+    .archive .intro {
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .year {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .year summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 0.9rem 1.25rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #263746;
+      background: #eef2f5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .year summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .year summary::after {
+      content: "+";
+      font-weight: 400;
+      color: #888;
+    }
+
+    .year[open] summary::after {
+      content: "\2212";
+    }
+
+    .year ul {
+      list-style: none;
+      margin: 0;
+      padding: 0.5rem 0.5rem 0.75rem;
+    }
+
+    .year li {
+      padding: 0;
+    }
+
+    .year a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.65rem 0.75rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #1876b8;
+      font-size: 1.05rem;
+    }
+
+    .year a:hover {
+      background: #f4f8fb;
+    }
+
+    .track {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .track-physics {
+      background: #e3edf7;
+      color: #1876b8;
+    }
+
+    .track-ess {
+      background: #e6f3e9;
+      color: #2c7a43;
+    }
+
+    .track-ib {
+      background: #f6e9d8;
+      color: #a15c1e;
+    }
+  </style>
+
+  <base target="_blank">
+
+  <link rel="stylesheet" href="scrollbar.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <div id="main" class="row">
+    <div class="archive">
+      <h1>Email Archive</h1>
+      <p class="intro">Past monthly update emails, organized by year. Click a month to open that email.</p>
+
+      <details class="year" open>
+        <summary>2026</summary>
+        <ul>
+          <li><a href="emails/september2026"><span>September 2026</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/IB/september2026"><span>September 2026</span><span class="track track-ib">IB Physics</span></a></li>
+          <li><a href="emails/ESS/september2026"><span>September 2026</span><span class="track track-ess">Earth &amp; Space Science</span></a></li>
+        </ul>
+      </details>
+
+      <details class="year" open>
+        <summary>2025</summary>
+        <ul>
+          <li><a href="emails/september2025"><span>September 2025</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/ESS/september2025"><span>September 2025</span><span class="track track-ess">Earth &amp; Space Science</span></a></li>
+        </ul>
+      </details>
+
+      <details class="year">
+        <summary>2024</summary>
+        <ul>
+          <li><a href="emails/june2024"><span>June 2024</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/september2024"><span>September 2024</span><span class="track track-physics">Physics</span></a></li>
+        </ul>
+      </details>
+
+      <details class="year">
+        <summary>2023</summary>
+        <ul>
+          <li><a href="emails/april2023"><span>April 2023</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/september2023"><span>September 2023</span><span class="track track-physics">Physics</span></a></li>
+        </ul>
+      </details>
+
+      <details class="year">
+        <summary>2022</summary>
+        <ul>
+          <li><a href="emails/march2022"><span>March 2022</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/may2022"><span>May 2022</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/september2022"><span>September 2022</span><span class="track track-physics">Physics</span></a></li>
+        </ul>
+      </details>
+
+      <details class="year">
+        <summary>2021</summary>
+        <ul>
+          <li><a href="emails/february2021"><span>February 2021</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/march2021"><span>March 2021</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/april2021"><span>April 2021</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/may2021"><span>May 2021</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/june2021"><span>June 2021</span><span class="track track-physics">Physics</span></a></li>
+          <li><a href="emails/september2021"><span>September 2021</span><span class="track track-physics">Physics</span></a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+<!-- sidebar -->
+  <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <a href="home.html" target="_self"><span><i class="material-icons">home</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;HOME</span></a><br>
+    <a href="emails.html" target="_self"><i class="material-icons">mail</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;EMAIL ARCHIVE</span></a><br>
+    <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;here</span></a><br>
+    <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;yet<span></a>
+
+    <button class="dropdown-btn"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;???</a></span></button>
+
+    <div class="dropdown-container">
+      <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;#1</a></span></a><br>
+      <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;#2</span></a><br>
+    </div>
+
+  </div>
+
+  <script src="sidebar.js"></script>
+
+</body>
+</html>
