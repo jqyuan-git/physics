@@ -4,128 +4,149 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Physics Homepage</title>
-  <meta name="description" content="Physics Homepage">
+  <title>Yuan Physics</title>
+  <meta name="description" content="Yuan Physics homepage: class updates, live stream, Remind, and clubs">
   <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    .email {
-      margin: 0px;
-      text-align: center;
-      padding: none;
-      overflow: hidden;
-      height: 600px;
-    }
-    body {
-      background-color:#f4f4f4;
-    }
-    iframe {
-      height: 100%;
-      width: 100%;
-      border: none;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-    .column {
-      float: left;
-      width: 50%;
-      padding: 10px;
-    }
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-      }
-    }
-  </style>
-  
   <base target="_blank">
-  
+
   <link rel="stylesheet" href="scrollbar.css">
   <link rel="stylesheet" href="sidebar.css">
-  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
 <body>
 
-  <div id= "main" class="row">
-    <div class="column">
-      <div>
-        <p>Monthly Update Emails</p>
-        <p><a href="emails/september2026">Latest: September 2026</a></p>
-        <p><a href="emails.html" target="_self">View Full Email Archive &rarr;</a></p>
+  <div id="main">
+
+    <header class="hero">
+      <div class="badges">
+        <span class="badge">Physics</span>
+        <span class="badge">IB Physics SL</span>
+        <span class="badge">Earth &amp; Space Science</span>
+      </div>
+      <h1>Yuan Physics</h1>
+      <p class="tagline">Class updates, resources, and links for Physics, IB Physics SL, and Earth &amp; Space Science &mdash; all in one place.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="remind.html" target="_self">Join on Remind</a>
+        <a class="btn btn-outline" href="emails.html" target="_self">Email Archive</a>
+      </div>
+    </header>
+
+    <div class="quick-links">
+      <a class="quick-link-card" href="remind.html" target="_self">
+        <i class="material-icons">forum</i>
+        Remind
+      </a>
+      <a class="quick-link-card" href="https://svusd.instructure.com/login/canvas">
+        <i class="material-icons">school</i>
+        Canvas
+      </a>
+      <a class="quick-link-card" href="https://www.youtube.com/channel/UCnRt_cbyGGuz6AFg-zIqnfg">
+        <i class="material-icons">smart_display</i>
+        YouTube
+      </a>
+      <a class="quick-link-card" href="https://discord.gg/tjCWhtp">
+        <i class="material-icons">chat</i>
+        Discord
+      </a>
+    </div>
+
+    <section class="section split">
+      <div class="card email-callout">
+        <h3>Latest Update</h3>
+        <p>September 2026 &mdash; Back-to-School Night recap, Canvas, Remind, and ways to support your student.</p>
+        <div class="btn-row">
+          <a class="btn btn-solid" href="emails/september2026">Read Email</a>
+          <a class="btn btn-ghost" href="emails.html" target="_self">View Full Archive</a>
+        </div>
       </div>
 
-      <iframe
-        src="https://player.twitch.tv/?channel=yuanphysics&parent=streamernews.example.com&autoplay=true&muted=true"
-        height="400"
-        width=100%
-        allowfullscreen="true">
-      </iframe>
+      <div class="card">
+        <h3>Live Stream</h3>
+        <iframe
+          src="https://player.twitch.tv/?channel=yuanphysics&parent=jqyuan-git.github.io&autoplay=true&muted=true"
+          height="260"
+          width="100%"
+          allowfullscreen="true">
+        </iframe>
+      </div>
+    </section>
 
-    </div>
-    <div class="column">
-      <p style="text-align: right;">
-        <iframe src="https://widgets.remind.com/widget?height=500&join=true&token=6f2b2fb03afe013dc9d70242ac110029" 
-          title="Remind Widget" 
-          style="height: 500px; width: auto;">
-        </iframe> 
-      </p>
-      <p style="text-align: right;">
-        <iframe src="https://widgets.remind.com/widget?height=500&join=true&token=54071a403afe013d29a30242ac11001e" 
-          title="Remind Widget" 
-          style="height: 500px; width: auto;">
-        </iframe> 
-      </p>
-      
-    </div>
-    
-  </div>
-  
+    <section class="section">
+      <h2>Join Your Class on Remind</h2>
+      <p class="section-sub">Pick your class to get text and app notifications for assignments and updates.</p>
+      <div class="remind-grid">
+        <div class="card">
+          <strong>Physics</strong>
+          <div><a class="btn btn-solid" href="https://www.remind.com/join/lh-physics">Join</a></div>
+        </div>
+        <div class="card">
+          <strong>IB Physics SL</strong>
+          <div><a class="btn btn-solid" href="https://www.remind.com/join/lh-ib-psl">Join</a></div>
+        </div>
+        <div class="card">
+          <strong>Earth &amp; Space Science</strong>
+          <div><a class="btn btn-solid" href="https://www.remind.com/join/lhhs-ess">Join</a></div>
+        </div>
+      </div>
+    </section>
 
-  <div class=grid-margin>
-    <div class="grid">
-      <div>
-        <a><img src="https://drive.google.com/uc?id=1g9pFF6nLDBHaGouIETQ453YW9oYt6Lrr" alt="Clubs" style="width:80%;height:31.8%"></a> 
+    <section class="section">
+      <h2>Clubs &amp; Communities</h2>
+      <p class="section-sub">Ways to connect beyond the classroom.</p>
+      <div class="clubs-grid">
+        <a class="card" href="https://discord.gg/tjCWhtp">
+          <i class="material-icons">chat</i>
+          <strong>Class Discord</strong>
+          <p>Ask questions and chat with classmates.</p>
+        </a>
+        <a class="card" href="https://www.remind.com/join/eadc2020">
+          <i class="material-icons">build</i>
+          <strong>Engineering &amp; Design Club</strong>
+          <p>Join on Remind for meeting updates.</p>
+        </a>
+        <a class="card" href="https://www.remind.com/join/g2ka48">
+          <i class="material-icons">groups</i>
+          <strong>Asian Student Union</strong>
+          <p>Join on Remind for meeting updates.</p>
+        </a>
       </div>
-        
-      <div >
-        <a href="https://discord.gg/tjCWhtp"><img src="https://drive.google.com/uc?id=1fEoEkPrV8mp-cigIIp5OM3gWfhRogHZi" alt="" style="width:71.1%;height:63.1%"></a>
-      </div>
-      <div >
-        <a href="https://www.remind.com/join/eadc2020"><img src="" alt="Engineering and Design Club" style="width:90%;height:90%"></a>
-      </div>
-      <div >
-        <a href="https://www.remind.com/join/g2ka48"><img src="" alt="Asian Student Union" style="width:90%;height:90%"></a>
-      </div>
-    </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Yuan Physics</span>
+      <nav>
+        <a href="home.html" target="_self">Home</a>
+        <a href="emails.html" target="_self">Email Archive</a>
+        <a href="remind.html" target="_self">Remind</a>
+        <a href="areacalc.html" target="_self">Area Calculator</a>
+      </nav>
+    </footer>
+
   </div>
 
 <!-- sidebar -->
   <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-    <a href="https://jqyuan.github.io/physics/home" target="_self"><span><i class="material-icons">home</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;HOME</span></a><br>
+    <a href="home.html" target="_self"><i class="material-icons">home</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;HOME</span></a><br>
     <a href="emails.html" target="_self"><i class="material-icons">mail</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;EMAIL ARCHIVE</span></a><br>
-    <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;here</span></a><br>
-    <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;yet<span></a>
+    <a href="remind.html" target="_self"><i class="material-icons">forum</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;REMIND</span></a><br>
+    <a href="https://svusd.instructure.com/login/canvas"><i class="material-icons">school</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;CANVAS</span></a><br>
 
-    <button class="dropdown-btn"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;???</a></span></button>
-    
+    <button class="dropdown-btn"><i class="material-icons">expand_more</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;MORE</span></button>
+
     <div class="dropdown-container">
-      <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;#1</a></span></a><br>
-      <a href="#"><i class="material-icons">help_outline</i><span class="icon-text"></span>&nbsp;&nbsp;&nbsp;&nbsp;#2</span></a><br>
+      <a href="https://www.youtube.com/channel/UCnRt_cbyGGuz6AFg-zIqnfg"><i class="material-icons">smart_display</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;YouTube</span></a><br>
+      <a href="https://discord.gg/tjCWhtp"><i class="material-icons">chat</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Discord</span></a><br>
+      <a href="areacalc.html" target="_self"><i class="material-icons">calculate</i><span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Area Calculator</span></a>
     </div>
-    
+
   </div>
 
-  <script  src="https://jqyuan.github.io/physics/sidebar.js"></script>
+  <script src="sidebar.js"></script>
 
 </body>
 </html>
