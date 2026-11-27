@@ -1,9 +1,10 @@
 # Mr. Yuan’s class website
 
-Static HTML, CSS and a small optional archive-filter script. No dependency installation
+Static HTML, CSS and a small legacy-link compatibility script. No dependency installation
 or build service is required for GitHub Pages. Main entry: `home.html` (also `index.html`).
 
-Navigation: Classes → Email Archive → Learning Tools → Family Help.
+Start by choosing a class. Each class has its own resources, current-year email archive,
+tools, and family help. Use Change Class to switch. Old public URLs remain available.
 The public archive shows the current school year. November 2026 was sent through
 ParentSquare, as confirmed by the teacher. Older URLs remain available but are not listed.
 
